@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Nexys4_Keyboard.srcs/sources_1/new/ShiftReg.v" \
+"../../../../Nexys4_Keyboard.srcs/sim_1/new/tb_ShiftReg.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

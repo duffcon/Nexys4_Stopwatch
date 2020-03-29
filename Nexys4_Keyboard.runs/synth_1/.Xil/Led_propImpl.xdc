@@ -1,7 +1,0 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/constrs_1/imports/Nexys4_Keyboard/Nexys-4-Master.xdc rfile:../../../Nexys4_Keyboard.srcs/constrs_1/imports/Nexys4_Keyboard/Nexys-4-Master.xdc id:1} [current_design]
-set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U9 [get_ports {sw[0]}]
-set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U8 [get_ports {sw[1]}]
-set_property src_info {type:XDC file:1 line:66 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN T8 [get_ports {led[0]}]
