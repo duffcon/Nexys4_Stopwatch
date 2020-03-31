@@ -67,6 +67,7 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
   set_param ced.repoPaths C:/Users/conne/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/ced_store
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part_repo_paths {C:/Users/conne/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store} [current_project]
   set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]

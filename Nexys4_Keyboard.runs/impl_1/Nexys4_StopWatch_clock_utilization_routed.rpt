@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Mar 30 22:52:11 2020
+| Date         : Tue Mar 31 10:40:39 2020
 | Host         : Laptop2n1 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file Nexys4_StopWatch_clock_utilization_routed.rpt
 | Design       : Nexys4_StopWatch
@@ -66,14 +66,13 @@ Table of Contents
 4. Local Clock Details
 ----------------------
 
-+----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+--------------------------------------------------+------------------------------------------+
-| Local Id | Driver Type/Pin | Constraint | Site/BEL          | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                                       | Net                                      |
-+----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+--------------------------------------------------+------------------------------------------||
-| 0        | FDCE/Q          | None       | SLICE_X88Y84/AFF  | X1Y1         |           6 |               1 |              |       | SevSeg_inst/count_inst0/clock_div_reg/Q          | SevSeg_inst/count_inst0/CLK              - Static -
-| 1        | FDCE/Q          | None       | SLICE_X86Y82/AFF  | X1Y1         |           5 |               1 |              |       | SevSeg_inst/count_inst1/clock_div_reg/Q          | SevSeg_inst/count_inst1/clock_div_reg_0  - Static -
-| 2        | FDCE/Q          | None       | SLICE_X84Y86/A5FF | X1Y1         |           5 |               2 |              |       | SevSeg_inst/nolabel_line46/digit0/tick_reg_reg/Q | SevSeg_inst/nolabel_line46/digit0/tick_0 - Static -
-| 3        | FDRE/Q          | None       | SLICE_X82Y85/AFF  | X1Y1         |           1 |               0 |              |       | btnd_inst/q_reg_reg/Q                            | btnd_inst/q_reg_reg_0                    - Static -
-+----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+--------------------------------------------------+------------------------------------------||
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+-----------------------------------------+-----------------------------+
+| Local Id | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                              | Net                         |
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+-----------------------------------------+-----------------------------||
+| 0        | FDCE/Q          | None       | SLICE_X86Y82/AFF | X1Y1         |          19 |               1 |              |       | SevSeg_inst/count_inst1/clock_div_reg/Q | SevSeg_inst/count_inst1/CLK - Static -
+| 1        | FDCE/Q          | None       | SLICE_X87Y84/AFF | X1Y1         |           6 |               1 |              |       | SevSeg_inst/count_inst0/clock_div_reg/Q | SevSeg_inst/count_inst0/CLK - Static -
+| 2        | FDRE/Q          | None       | SLICE_X82Y84/AFF | X1Y1         |           1 |               0 |              |       | btnd_inst/q_reg_reg/Q                   | btnd_inst/q_reg_reg_0       - Static -
++----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+-----------------------------------------+-----------------------------||
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents the clock pin loads (pin count)
 *** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -90,7 +89,7 @@ Table of Contents
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2600 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y0              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1500 |    0 |   550 |    0 |    40 |    0 |    20 |    0 |    40 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2000 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   91 |  1900 |   41 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  100 |  1900 |   70 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2000 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1900 |    0 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2600 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |

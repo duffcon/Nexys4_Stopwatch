@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Mar 30 22:51:43 2020
+| Date         : Tue Mar 31 10:40:09 2020
 | Host         : Laptop2n1 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Nexys4_StopWatch_control_sets_placed.rpt
 | Design       : Nexys4_StopWatch
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               8 |            1 |
+| No           | No                    | No                     |               8 |            2 |
 | No           | No                    | Yes                    |              73 |           22 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -70,17 +70,17 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------------------------+---------------+------------------+------------------+----------------+
-|                    Clock Signal                   | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+---------------------------------------------------+---------------+------------------+------------------+----------------+
-|  btnd_inst/q_reg_reg_0                            |               | btnC_IBUF        |                1 |              1 |
-|  SevSeg_inst/nolabel_line46/digit0/CLK            | state_reg     | btnC_IBUF        |                1 |              4 |
-|  SevSeg_inst/count_inst1/clock_div_reg_0          | state_reg     | btnC_IBUF        |                1 |              5 |
-|  SevSeg_inst/nolabel_line46/digit0/tick_0         | state_reg     | btnC_IBUF        |                1 |              5 |
-|  SevSeg_inst/nolabel_line46/digit1/tick_reg_reg_0 | state_reg     | btnC_IBUF        |                2 |              5 |
-|  SevSeg_inst/count_inst0/CLK                      |               | btnC_IBUF        |                3 |              6 |
-|  clk_IBUF_BUFG                                    |               |                  |                1 |              8 |
-|  clk_IBUF_BUFG                                    |               | btnC_IBUF        |               18 |             66 |
-+---------------------------------------------------+---------------+------------------+------------------+----------------+
++------------------------------+----------------------------------------------------+------------------+------------------+----------------+
+|         Clock Signal         |                    Enable Signal                   | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------------+----------------------------------------------------+------------------+------------------+----------------+
+|  btnd_inst/q_reg_reg_0       |                                                    | btnC_IBUF        |                1 |              1 |
+|  SevSeg_inst/count_inst1/CLK | SevSeg_inst/nolabel_line46/digit2/state_reg_reg[0] | btnC_IBUF        |                1 |              4 |
+|  SevSeg_inst/count_inst1/CLK | SevSeg_inst/nolabel_line46/digit0/E[0]             | btnC_IBUF        |                1 |              5 |
+|  SevSeg_inst/count_inst1/CLK | SevSeg_inst/nolabel_line46/digit0/state_reg_reg[0] | btnC_IBUF        |                1 |              5 |
+|  SevSeg_inst/count_inst1/CLK | state_reg                                          | btnC_IBUF        |                2 |              5 |
+|  SevSeg_inst/count_inst0/CLK |                                                    | btnC_IBUF        |                3 |              6 |
+|  clk_IBUF_BUFG               |                                                    |                  |                2 |              8 |
+|  clk_IBUF_BUFG               |                                                    | btnC_IBUF        |               18 |             66 |
++------------------------------+----------------------------------------------------+------------------+------------------+----------------+
 
 

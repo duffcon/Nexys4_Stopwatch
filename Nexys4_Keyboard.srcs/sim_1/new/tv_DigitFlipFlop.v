@@ -29,8 +29,9 @@ module tb_DigitFlipFlop;
     wire [3:0] d1;
     wire [3:0] d2;
     wire [3:0] d3;
+    wire [3:0] tick;
     
-    FourDigitCounter mod_inst0 (clk, rst, en, d0, d1, d2, d3);
+    FourDigitCounter mod_inst0 (clk, rst, en, d0, d1, d2, d3, tick);
     
     always
         #1 clk = ~clk;
@@ -42,7 +43,7 @@ module tb_DigitFlipFlop;
         en = 1; #50
         en = 0; #10
         en = 1; #50
-        #500
+        #800
         $stop;
 //        
     end

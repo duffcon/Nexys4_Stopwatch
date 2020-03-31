@@ -25,8 +25,9 @@ module DigitFlipFlop
     input clk,
     input rst,
     input en,
+    input t_in,
     output [3:0] q,
-    output tick
+    output t_out
     );
     
     reg [3:0] q_reg;
@@ -39,20 +40,14 @@ module DigitFlipFlop
             q_prev = 0;
             tick_reg = 0;
         end
-        else if (en) begin
-                q_prev = q_reg;
+        else if (en && t_in) begin
+                tick_reg = (q_reg == N-1) ? 1: 0;
                 q_reg = (q_reg == N) ? 0 : q_reg + 1;
-                if (q_prev == N) begin
-                    tick_reg = 1;
-                end
-                else begin
-                    tick_reg = 0;
-                end
 
          end
     end
     
     assign q = q_reg;
-    assign tick = tick_reg;
+    assign t_out = tick_reg;
     
 endmodule
