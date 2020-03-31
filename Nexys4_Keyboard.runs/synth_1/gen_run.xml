@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1585508620">
-  <File Type="PA-TCL" Name="Top_SevenSegments.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Top_SevenSegments_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="Top_SevenSegments_reports.tcl"/>
-  <File Type="RDS-RDS" Name="Top_SevenSegments.vds"/>
-  <File Type="RDS-UTIL" Name="Top_SevenSegments_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Top_SevenSegments_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="Top_SevenSegments.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Top_SevenSegments_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Top_SevenSegments_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1585633834">
+  <File Type="PA-TCL" Name="Nexys4_StopWatch.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Nexys4_StopWatch_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Nexys4_StopWatch_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Nexys4_StopWatch.vds"/>
+  <File Type="RDS-UTIL" Name="Nexys4_StopWatch_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Nexys4_StopWatch_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Nexys4_StopWatch.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Nexys4_StopWatch_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Nexys4_StopWatch_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ButtonBuffer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/CycleCounter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DigitFlipFlop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DigitsCounter.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -39,7 +60,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Top_SevenSegments.v">
+    <File Path="$PSRCDIR/sources_1/new/Top.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -48,7 +69,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Top_SevenSegments"/>
+      <Option Name="TopModule" Val="Nexys4_StopWatch"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -72,9 +93,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

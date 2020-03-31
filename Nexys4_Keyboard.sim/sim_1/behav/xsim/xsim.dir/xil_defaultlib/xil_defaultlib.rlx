@@ -3,5 +3,14 @@
 Nov  6 2019
 21:57:16
 C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tb_ButtonBuffer.v,1585633776,verilog,,,,tb_ButtonBuffer,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tb_SevenSegments.v,1585606809,verilog,,,,tb_SevenSegments,,,,,,,,
 C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tb_ShiftReg.v,1585507232,verilog,,,,tb_ShiftReg,,,,,,,,
-C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/ShiftReg.v,1585507912,verilog,,C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tb_ShiftReg.v,,ShiftReg,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tv_DigitFlipFlop.v,1585624903,verilog,,,,tb_DigitFlipFlop,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/ButtonBuffer.v,1585633024,verilog,,C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tb_ButtonBuffer.v,,ButtonBuffer,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/CycleCounter.v,1585453946,verilog,,C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/NumberToSegment.v,,CycleCounter,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/DigitFlipFlop.v,1585624630,verilog,,C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/DigitsCounter.v,,DigitFlipFlop,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/DigitsCounter.v,1585613578,verilog,,C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tv_DigitFlipFlop.v,,FourDigitCounter,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/NumberToSegment.v,1585454879,verilog,,C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/SevenSegments.v,,NumberToSegment,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/SevenSegments.v,1585611395,verilog,,C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/ShiftReg.v,,SevenSegments,,,,,,,,
+C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sources_1/new/ShiftReg.v,1585507912,verilog,,C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tb_SevenSegments.v,,ShiftReg,,,,,,,,

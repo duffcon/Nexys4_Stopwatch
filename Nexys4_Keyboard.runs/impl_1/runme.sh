@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log Top_SevenSegments.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Top_SevenSegments.tcl -notrace
+EAStep vivado -log Nexys4_StopWatch.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Nexys4_StopWatch.tcl -notrace
 
 

@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log Top_SevenSegments.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_SevenSegments.tcl" );
+         "-log Nexys4_StopWatch.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nexys4_StopWatch.tcl" );
 
 
 

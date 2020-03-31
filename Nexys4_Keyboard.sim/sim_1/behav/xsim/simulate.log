@@ -1,3 +1,3 @@
 Vivado Simulator 2019.2
 Time resolution is 1 ps
-$stop called at time : 104 ns : File "C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tb_ShiftReg.v" Line 37
+$stop called at time : 110 ns : File "C:/Users/conne/OneDrive/Code/Verilog/Nexys4_Keyboard/Nexys4_Keyboard.srcs/sim_1/new/tb_ButtonBuffer.v" Line 44
