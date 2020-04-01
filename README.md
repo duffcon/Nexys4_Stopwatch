@@ -1,8 +1,6 @@
 # Nexys4_Keyboard
 ## LED And
 
-
-
 ```verilog
 module Led(
     input [1:0] sw,
@@ -15,10 +13,3 @@ module Led(
 endmodule
  
 ```
-![](./Bin.PNG)
-
-Synthesis > Implementation Bitstream
-
-s25fl128sxxxxxx0-spi-x1_x2_x4
-
-![](./CMD.PNG)
